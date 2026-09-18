@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Immutable Audit Logging and Compliance System for a Healthcare Platform
 
 Fourth year computer science project. An audit logging system for a company that supports elderly patients and their caregivers. Because the data is sensitive, every access and change to a patient record must be recorded in a log that cannot be altered or deleted after the fact, and that can be independently verified.
@@ -137,3 +138,7 @@ audit-log-system/
 ## Compliance notes
 
 The system deals with elderly patients' and caregivers' data, which is sensitive. Design decisions made with that in mind so far: role is tracked on every audit event (`actor_role`), the audit table itself cannot be altered after the fact even by an administrator, and passwords are hashed with bcrypt, never stored or logged in plain text. Role-based access control on the API itself (so only authorized roles can read or write specific resources) is scoped for a later sprint; Sprint 1 lays the schema and the User model it will build on.
+=======
+# AuditLoggingSystem
+An immutable audit logging system for a healthcare facility that ensures audit records are tamper-evident, traceable, and integrity-verifiable using hash chaining, PostgreSQL, Redis Streams and anomaly detection.
+>>>>>>> 72cf3f78af24edaee3164adffc57bcfa17d8735a
